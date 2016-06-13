@@ -1,0 +1,296 @@
+#div1 {position:relative; width:450px; height:450px; margin: 20px auto 0; }
+#div1 a {position:absolute; top:0px; left:0px; font-family: Microsoft YaHei; color:#fff; font-weight:bold; text-decoration:none; padding: 3px 6px; }
+#div1 a:hover {border: 1px solid #eee; background: #000; }
+#div1 .blue {color:blue;}
+#div1 .red {color:red;}
+#div1 .yellow {color:yellow;}
+
+p { font: 14px Microsoft YaHei; text-align: center; color: #ba0c0c; }
+p a { color: #ba0c0c; }
+html{
+  font-size: 100px;
+}
+
+#canvas{
+  position: absolute;
+  top: 3px;
+  left:10px;
+  z-index: 10;
+}
+.workshover:hover{
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+.workshover{
+  margin-right: 10px;
+  display: block;
+  overflow: hidden;
+}
+
+#canvas{
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+.box{
+  background: url(../Picture/clock.jpg);
+  width:400px;
+  height: 400px;
+  position: relative;
+}
+
+
+
+
+#galleryimg .mix{
+	display: none;
+}
+
+
+.grid {
+	position: relative;
+	margin: 20px auto 0px;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+
+.grid figure figcaption {
+	/*padding: 2em;*/
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 700;
+  font-family: '微软雅黑';
+  display: none;
+}
+.grid:hover figure h2{
+  display: block;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+
+figure.effect-Beauty{
+	background-color: #17819c;
+}
+
+figure.effect-Beauty img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+	width: 100%;
+}
+
+figure.effect-Beauty:hover img {
+	opacity: 0.5;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-Beauty h2 {
+	margin-top: 20%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-Beauty p {
+	margin: 1em 0 0;
+	padding: 15px;
+	border: 1px solid #fff;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+}
+
+figure.effect-Beauty:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-Beauty:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+
+
+/* work section */
+#work {
+	/*background-color: #ffffff;*/
+}
+#work .container {
+	width: 100%;
+	padding: 0;
+	/*margin: 0;*/
+}
+#work .title {
+	padding: 100px 60px 60px 60px;
+}
+#work .bg-black {
+	background-color: #303030;
+	color: #ffffff;
+}
+#work .bg-red {
+	background-color: #eb5424;
+	color: #ffffff;
+}
+#work h3 {
+	padding-bottom: 60px;
+}
+#work .fa {
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	transition: all 0.4s ease-in-out;
+	margin-top: 40px;
+}
+#work .fa:hover {
+	background-color: #ffffff;
+	border-radius: 50%;
+	color: #303030;
+}
+/* team section */
+#team {
+	background: #202020 url('../images/team-bg.jpg') 50% 0 repeat-y fixed;
+	color: #ffffff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#team h2 {
+	color: #ffffff;
+}
+#team h3 {
+	font-size: 20px;
+	line-height: 10px;
+}
+#team h4 {
+	color: #202020;
+	line-height: 10px;
+	font-weight: bold;
+}
+#team .team-des {
+	background-color: #eb5424;
+	color: #ffffff;
+	padding: 20px 12px;
+	position: relative;
+}
+#team img {
+	max-width: 100%;
+	height: auto;
+	padding-top: 60px;
+}
+
+#brief_2{
+  padding:0;
+}
+.b{
+  overflow: hidden;
+  padding: 0;
+}
+.b1{
+  background: url(../Picture/snake.jpg)
+
+}
+.b2{
+  background: url(../Picture/five.jpg)
+
+}
+.b3{
+  background: url(../Picture/saolei.jpg)
+
+}
+.b4{
+  background: url(../Picture/keygame.jpg)
+
+}
+
+.games{
+  display: block;
+  opacity: 0;
+  transition: opacity .5s ease;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.games i{
+  opacity: 0;
+}
+
+.games:hover{
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
