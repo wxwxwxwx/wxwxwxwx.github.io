@@ -294,3 +294,11 @@ figure.effect-Beauty:hover p {
   background: rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
+
+
+#example{
+  width: 550px;
+  height: 350px;
+  position: relative;
+  left: -94px;
+}

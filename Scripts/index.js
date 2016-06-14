@@ -1,27 +1,35 @@
 $(function(){
   var word_array = [
-          {text: "HTML", weight: 15,link: "http://jquery.com/"},
-          {text: "CSS", weight: 9,link: "http://jquery.com/"},
-          {text: "Angular", weight: 6, html: {title: "I can haz any html attribute"},link: "http://jquery.com/"},
+          {text: "HTML", weight: 15,link: "http://wxwxwxwx.github.io/blog/2015/html-css"},
+          {text: "CSS", weight: 9,link: "http://wxwxwxwx.github.io/blog/2015/html-css"},
+          {text: "Angular", weight: 6, html: {title: "I can haz any html attribute"},link: "http://wxwxwxwx.github.io/blog/2016/angular"},
           {text: "node.js", weight: 7,link: "http://jquery.com/"},
-          {text: "Javascript", weight: 15,link: "http://jquery.com/"},
-          {text: "jQuery", weight: 6,link: "http://jquery.com/"},
-          {text: "git", weight: 8,link: "http://jquery.com/"},
-          {text: "gump", weight: 7,link: "http://jquery.com/"},
+          {text: "Javascript", weight: 15,link: "http://wxwxwxwx.github.io/blog/2015/Javascript"},
+          {text: "jQuery", weight: 6,link: "http://wxwxwxwx.github.io/blog/2015/Jquery"},
+          {text: "DOM", weight: 8,link: "http://wxwxwxwx.github.io/blog/2015/Dom"},
+          {text: "Event", weight: 7,link: "http://wxwxwxwx.github.io/blog/2015/Event"},
           {text: "materialize.css", weight: 6,link: "http://jquery.com/"},
           {text: "youman", weight:3,link: "http://jquery.com/"},
-          {text: "zepto.js", weight: 9,link: "http://jquery.com/"},
-          {text: "swiper", weight: 10,link: "http://jquery.com/"},
-          {text: "jQuery", weight: 13,link: "http://jquery.com/"},
-          {text: "bootstrap", weight: 15,link: "http://jquery.com/"},
-          {text: "jQuery", weight: 12,link: "http://jquery.com/"},
+          {text: "zepto.js", weight: 9,link: "http://wxwxwxwx.github.io/blog/2016/zepto"},
+          {text: "swiper", weight: 3,link: "http://jquery.com/"},
+
+          {text: "bootstrap", weight: 15,link: "http://wxwxwxwx.github.io/blog/2016/bootstrap"},
+          {text: "fullpage", weight: 15,link:"http://wxwxwxwx.github.io/blog/2016/fullpage"},
+          {text: "Ajax", weight: 9, link: "http://wxwxwxwx.github.io/blog/2015/Ajax"},
+          {text: "sass", weight: 6, html: {title: "I can haz any html attribute"},link:"http://wxwxwxwx.github.io/blog/2015/sass"},
+          {text: "Canvas", weight: 7,link:"http://wxwxwxwx.github.io/blog/2015/canvas"},
+          {text: "Amet", weight: 3}
+
+
 
           // ...as many words as you want
       ];
 
 
         // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
-        $("#example").jQCloud(word_array);
+        $("#example").jQCloud(word_array,{
+          delayedMode:true,
+        });
 
         var can = document.querySelector('#canvas');
         var cans = document.querySelector('#canvas2')
