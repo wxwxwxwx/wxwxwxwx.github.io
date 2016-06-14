@@ -30,6 +30,7 @@ $(function(){
         $("#example").jQCloud(word_array,{
           delayedMode:true,
         });
+        $('#example span a').attr('target','_blank')
 
         var can = document.querySelector('#canvas');
         var cans = document.querySelector('#canvas2')
